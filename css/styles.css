@@ -1,0 +1,62 @@
+body, html, canvas {
+    padding: 1;
+    margin: 1px;
+}
+
+html {
+background-color: lightgreen;
+}
+
+body {
+  background-image: linear-gradient(lightblue 20%, lightgreen 30%);
+}
+
+.box {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    border-radius: 44px;
+    border: 4px;
+    margin: 4px 2px;
+  }
+
+  .box1 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    border-radius: 40px;
+    border: 4px;
+    margin: 4px 2px;
+  }
+
+  .box2 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #11d3bf;
+    color: white;
+    text-decoration: none;
+    border-radius: 40px;
+    border: 4px;
+    margin: 4px 2px;
+  }
+
+  .break {
+    width:50%;
+    text-align:left;
+    margin-left:0;
+    height:2px;
+    border-width:0;
+    background-color:rgb(0, 0, 0)
+  }
+
+  .nav {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    position: fixed;
+    top: 0;
+  }
