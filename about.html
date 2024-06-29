@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <title>About Me</title>
+
+        <link type="text/css" rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet"
+                href="https://fonts.googleapis.com/css?family=Roboto+Mono">
+                <style>
+                    body {
+                      font-family: 'Roboto Mono';
+                      font-size: 12.5px;
+                    }
+                  </style>
+        <a href="/"> <img class="box1" src="images/github-icon.png" alt="Oli's Logo"  width="50" height="50"></a>
+<div class="nav">
+    <div class="nav">
+        <nav style="text-align: center;">
+            <ul>
+                <a class="box" href="/">Home</a>
+                <a class="box" href="projects.html">Projects</a>
+                <a class="box" href="about.html">About Me</a>
+            </ul>
+        </nav>
+    </div>
+</div>
+    </head>
+
+    <body>
+        <h1>This is the page where you find out things about me!</h1>
+        <p>This project (website) has been active for <label class="timer">0d 0h 0m 0s</label></p>
+        <script>
+            setInterval(function() {
+                var startDate = new Date("2024-04-12").getTime();
+                var now = new Date().getTime();
+                var distance = now - startDate;
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                document.getElementsByClassName("timer")[0].innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+            }, 1000);
+        </script>
+        <h2>Stats:</h2>
+        <p1>
+          <ul>
+              <li>Projects: <b>5</b></li>
+              <li>Current Grade: <b>C</b></li>
+              <li>Active Projects: <b>3</b></li>
+          </ul>
+        </p1>
+        <h3>Here is some Fun Facts:</h3>
+        <p2>
+          <ul>
+              <li>I am learning HTML5, CSS, Javascript, Visual Studio Code, Git and a little bit of SwiftUI</li> 
+              <li>I first got introduced to coding when I was 8 years old! It was when me and my Dad made <a class="box4" href="olidraw.html">Olidraw</a></li>
+          </ul>
+        </p2>
+        <h2>What is the best project I have made?</h2>
+        <p3>In my opinion the best project that I have made is <a class="box4" href="sliffer.html">Sliffer</a></p2>
+    </body>
+
+</html>

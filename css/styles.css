@@ -54,6 +54,18 @@ body {
     border: 4px;
     margin: 4px 2px;
   }
+  
+  .box4 {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    border-radius: 22px;
+    border: 2px;
+    margin: 2px 1px;
+  }
+
 
   .break {
     width:50%;
@@ -71,3 +83,9 @@ body {
     position: fixed;
     top: 0;
   }
+
+
+ .timer {
+    font-size: inherit;
+    color: inherit;
+}
