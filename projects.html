@@ -1,50 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-      
-        <meta charset="UTF-8">
-        <title>Projects</title>
-        <link rel="shortcut icon" type="images/x-icon" href="images/github-icon.png">
-        <link type="text/css" rel="stylesheet" href="css/styles.css" />
-        <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Roboto+Mono">
-        <style>
-            body {
-              font-family: 'Roboto Mono';
-              font-size: 12.5px;
-            }
-          </style>
-        <a href="index.html"> <img class="box1" src="images/github-icon.png" alt="Oli's Logo"  width="50" height="50"></a>
-        <div class="nav">
-            <nav style="text-align: center;">
-                <ul>
-                    <a class="box" href="index.html">Home</a>
-                    <a class="box" href="projects.html">Projects</a>
-                    <a class="box" href="about.html">About Me</a>
-                </ul>
-            </nav>
-        </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="shortcut icon" type="images/x-icon" href="images/github-icon.png">
+    <link type="text/css" rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
+    <script src="js/background-animation.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <a href="index.html" class="home-icon"><img class="box" src="images/github-icon.png" alt="Oli's Logo" width="50" height="50"></a>
+        <nav class="nav">
+            <ul>
+                <a class="box" href="projects.html">Projects</a>
+                <a class="box" href="about.html">About Me</a>
+            </ul>
+        </nav>
     </div>
 
-    </head>
-  
-    <body>
-<h1><a class="box" href="olidraw.html" title="OliDraw">OliDraw</a></h1>
-<p>My first project ever! It was made with my Dad when I was 8</p>
-<hr class="break">
-<h1><a class="box" href="sliffer.html" title="Sliffer">Sliffer</a></h1>
-<p>The best way to find Apple Shortcuts</p>
-<hr class="break">
-<h1><a class="box" href="penfolio.html" title="Penfolio">Penfolio</a></h1>
-<p>Your 100% private journal</p>
-<hr class="break">
-<h1><a class="box" href="pizza-topping-generator.html" title="Pizza Topping Generator">Pizza Topping Generator</a></h1>
-<p>Need pizza toppings? This is the place!</p>
-<hr class="break">
-<h1><a class="box" href="how-many-hours-left.html" title="How many hours left?">How many hours left?</a></h1>
-<p>See how many hours you need to do a day to get what you want from the Hack Club arcade shop!</p>
-<hr class="break">
-<h1><a class="box" href="devdeck.html" title="DevDeck">DevDeck</a></h1>
-<p>Show your coding projects and skills with Devdeck, the ultimate portfolio builder for developers</p>
+    <h1>My Projects</h1>
+
+    <div class="filter-options">
+        <label for="sort-select">Sort by:</label>
+        <select class="box" id="sort-select" onchange="sortProjects()">
+            <option value="default">Default (Creation Date)</option>
+            <option value="paused">Paused</option>
+            <option value="published">Published</option>
+            <option value="work-in-progress">Work in progress</option>
+            <option value="most-popular">Most Popular</option>
+        </select>
+    </div>
+    
+<br>
+<div id="project-list">
+    <div class="floating-card">
+        <h1>
+            <a class="box3" href="olidraw.html" title="OliDraw">OliDraw</a></h1>
+            <span class="status">
+                <span class="status-dot status-published"></span><p style="font-size: 17px;">Published</p>
+            </span>
+        <p>My first project ever! It was made with my Dad when I was 8</p>
+    </div>
+    
+    <div class="floating-card">
+        <h1>
+            <a class="box3" href="sliffer.html" title="Sliffer">Sliffer</a>
+        </h1>
+        <span class="status">
+            <span class="status-dot status-paused"></span><p style="font-size: 17px;">Paused</p>
+        </span>
+        <p>The best way to find Apple Shortcuts.</p>
+    </div>
+    
+    <div class="floating-card">
+        <h1>
+            <a class="box3" href="penfolio.html" title="Penfolio">Penfolio</a>
+        </h1>
+        <span class="status">
+            <span class="status-dot status-paused"></span><p style="font-size: 17px;">Paused</p>
+        </span>
+        <p>Your 100% private, and customizable journal.</p>
+    </div>
+    
+    <div class="floating-card">
+        <h1>
+            <a class="box3" href="pizza-topping-generator.html" title="Pizza Topping Generator">Pizza Topping Generator</a>
+        </h1>
+        <span class="status">
+            <span class="status-dot status-published"></span><p style="font-size: 17px;">Published</p>
+        </span>
+        <p>Need pizza toppings? This is the place!</p>
+    </div>
+    
+    <div class="floating-card">
+        <h1>
+            <a class="box3" href="how-many-hours-left.html" title="How many hours left?">How many hours left?</a>
+        </h1>
+        <span class="status">
+            <span class="status-dot status-published"></span><p style="font-size: 17px;">Published</p>
+        </span>
+        <p>See how many hours you need to do a day to get what you want from the Hack Club arcade shop!</p>
+    </div>
+    
+    <div class="floating-card">
+        <h1>
+            <a class="box3" href="devdeck.html" title="DevDeck">DevDeck</a>
+        </h1>
+        <span class="status">
+            <span class="status-dot status-wip"></span><p style="font-size: 17px;">Work in progress</p>
+        </span>
+        <p>Show your coding projects and skills with Devdeck, the ultimate portfolio builder for developers.</p>
+    </div>
+    
+    <div class="floating-card">
+        <h1>
+            <a class="box3" href="terminal-portfolio.html" title="Terminal Portfolio">Terminal Portfolio</a>
+        </h1>
+        <span class="status">
+            <span class="status-dot status-published"></span><p style="font-size: 17px;">Published</p>
+        </span>
+        <p>My portfolio, but in a Terminal!</p>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+
 </html>
