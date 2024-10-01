@@ -19,6 +19,7 @@ function sortProjects() {
         const popularityOrder = [
             "OliDraw",
             "Terminal Portfolio",
+            "BytaOS",
             "Penfolio",
             "Pizza Topping Generator",
             "Sliffer",
